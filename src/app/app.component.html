@@ -1,25 +1,31 @@
 <body>
   <!-- nav -->
   <div id="nav" class="nav">
-    <img class="nav__logo" src="./assets/images/imbaflix.png" alt="" />
     <div class="header_left">
-      <ul>
-        <li>
-          <a routerLink="/home">home</a>
-        </li>
-        <li>
-          <a routerLink="/tvSeries">Series Tv</a>
-        </li>
-        <li>
-          <a routerLink="/myList">My List</a>
-        </li>
-      </ul>
+      <img
+        class="nav__logo"
+        src="./assets/images/imbaflix.png"
+        alt=""
+        height="100"
+        width="300"
+      />
     </div>
+    <ul>
+      <li>
+        <a routerLink="/home">home</a>
+      </li>
+      <li>
+        <a routerLink="/tvSeries">Series Tv</a>
+      </li>
+      <li>
+        <a routerLink="/myList">My List</a>
+      </li>
+    </ul>
     <img class="nav__avatar" src="./assets/images/netflix-avatar.png" alt="" />
   </div>
 
   <!-- header -->
-  <header class="banner">
+  <div class="banner">
     <div class="banner__contents">
       <div class="banner__buttons">
         <h1 class="banner__title">Money Heist</h1>
@@ -33,12 +39,11 @@
         characteristic: n...
       </h1>
     </div>
-    <div class="banner--fadeBottom"></div>
-  </header>
-
+  </div>
+  <div class="banner--fadeBottom"></div>
   <!-- Netflix Originals -->
   <div class="row">
-    <h1><router-outlet></router-outlet></h1>
     <h2>NETFLIX ORIGINALS</h2>
   </div>
 </body>
+<h1><router-outlet></router-outlet></h1>
