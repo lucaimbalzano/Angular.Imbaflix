@@ -20,7 +20,7 @@ body {
   background-size: cover;
   width: 100%;
   position: absolute;
-  height: 80vh;
+  height: 60vh;
   top: 0;
   left: 0;
   display: flex;
@@ -157,4 +157,12 @@ ul a:hover {
 }
 .header__left li.active a {
   color: white;
+}
+
+/*rows*/
+
+.row {
+  color: white;
+  margin-left: 20px;
+  margin-top: 50%;
 }
