@@ -19,7 +19,7 @@
   background-size: cover;
 
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 20px;
   transition: transform 0.3s ease-in;
 }
 
@@ -28,5 +28,32 @@
 }
 
 .cards-movies::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+/*firstCardsMovie*/
+
+.firstCards-movies {
+  /* background-color: hsl(206, 21%, 94%); */
+  background: url("https://res.cloudinary.com/dp6zlazyt/image/upload/v1618527272/wallpapersden.com_iphone-xs-original_3840x2160_ga6rki.jpg");
+  margin: 10px;
+  /* overflow-y: hidden;
+    overflow-x: scroll; */
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in;
+}
+
+.firstCards-movies:hover {
+  transform: scale(1.1);
+}
+
+.firstCards-movies::-webkit-scrollbar {
   overflow: hidden;
 }
