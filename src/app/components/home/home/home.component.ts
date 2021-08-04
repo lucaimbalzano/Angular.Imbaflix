@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { createReadStream } from 'fs';
 import { CardSlider } from 'src/app/cardSlider';
 
 @Component({
@@ -15,12 +14,13 @@ export class HomeComponent implements OnInit {
   constructor() { }
   
   ngOnInit(): void {
-    this.cardSliderSupport;
+    this.getCardsSliders(this.cardsSlider);
   }
 
   getCardsSliders(cardsSlider:CardSlider[] ){
     for(let card of cardsSlider){
         this.counterSlider+=1;
+        
         this.cardSliderSupport.push(card);
         if(this.counterSlider == 5)
           {return this.cardSliderSupport;}
