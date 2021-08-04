@@ -3,13 +3,13 @@
 <div class="cards-container">
   <div
     class="firstCards-movies"
-    [ngStyle]="{ background: cardBack.url }"
-    *ngFor="let cardBack of cardsSlider"
+    *ngFor="let cardBack of cardSliderSupport"
+    [ngStyle]="{ 'background-image': 'url(' + cardBack.url + ')' }"
   >
     {{ cardBack.name }}
   </div>
 </div>
-
+<ul></ul>
 <h3 style="color: aliceblue">GENRE</h3>
 <div class="cards-container">
   <div class="cards-movies">a</div>

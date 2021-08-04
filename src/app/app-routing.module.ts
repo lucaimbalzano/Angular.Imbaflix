@@ -7,7 +7,8 @@ import { TvSeriesComponent } from './components/tvSeries/tv-series/tv-series.com
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'myList', component: MylistComponent},
-  {path: 'tvSeries', component: TvSeriesComponent}
+  {path: 'tvSeries', component: TvSeriesComponent},
+  {path: '', component: HomeComponent, pathMatch: 'full'}
 ];
 
 @NgModule({
