@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
 
   counterSlider = 0;
   cardSliderSupport:CardSlider[];
+  myArray= [{ a: 'a', b: 'b' }, { a: 'c', b: 'd' }];
+  myClonedArray = [];
 
   constructor() { }
   
@@ -18,14 +20,10 @@ export class HomeComponent implements OnInit {
   }
 
   getCardsSliders(cardsSlider:CardSlider[] ){
-    for(let card of cardsSlider){
-        this.counterSlider+=1;
-        
-        this.cardSliderSupport.push(card);
-        if(this.counterSlider == 5)
-          {return this.cardSliderSupport;}
-    }
-    return cardsSlider;
+ 
+    this.myArray.forEach(val => this.myClonedArray.push(Object.assign({}, val)));
+    this.cardsSlider.forEach(card => this.cardSliderSupport.push(Object.assign({},card)));
+    return this.cardSliderSupport;
   }
 
   cardsSlider :CardSlider[] = [{
